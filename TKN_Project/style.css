@@ -1,0 +1,479 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.container-fluid {
+	background-color: rgb(25, 59, 34);
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: 115px 1078px;
+}
+
+.logo {
+	min-height: 85px;
+	background: url(img/lotus-logo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.pa {
+	height: 70px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+	color: yellow;
+	font-weight: bold;
+	word-spacing: 5px;
+}
+
+.nav-main {
+	background-color: rgb(67, 196, 114);
+}
+
+.nav-main ul {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+.nav-main li a {
+	display: block;
+	text-decoration: none;
+	padding: 14px 20px;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+.nav-main li a:hover {
+	background-color: rgb(19, 82, 42);
+}
+
+.showcase {
+	min-height: 700px;
+	background: url(img/nature.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.quote {
+	position: absolute;
+	left: 80px;
+	top: 50px;
+}
+.quote pre {
+	line-height: 1.7rem;
+	font-weight: 500;
+	word-spacing: 1.5px;
+	font-size: 1.2rem;
+}
+
+.searchbar-bg {
+	background-color: rgb(67, 196, 114);
+}
+
+.search-container {
+	width: 1200px;
+	height: 65px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: ". . form form";
+	position: relative;
+	align-items: center;
+}
+
+.search-container form {
+	grid-area: form;
+	justify-self: end;
+}
+
+.search-container form input {
+	height: 25px;
+	width: 300px;
+	border: 1px solid rgb(67, 196, 114);
+	border-radius: 4px;
+	background-color: linen;
+}
+
+.search-container form i {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	color: darkgray;
+}
+
+.middle-bg {
+	background-color: rgb(25, 59, 34);
+}
+
+.middle-container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.middle-container p {
+	text-align: center;
+	text-transform: uppercase;
+	color: gold;
+	font-size: 20px;
+	word-spacing: 2px;
+}
+
+.middle-container p:nth-child(1) {
+	margin-top: 20px;
+}
+.middle-container p:nth-child(2) {
+	margin-bottom: 20px;
+}
+
+.card-bg {
+	background-color: lightskyblue;
+	outline: 1px solid yellow;
+}
+
+.card-container {
+	width: 1200px;
+	padding: 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 15px;
+	grid-row-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto 300px;
+}
+
+.card-container img {
+	width: 100%;
+	height: 200px;
+}
+
+.card-container div {
+	background-color: rgb(67, 196, 114);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.card-container div p {
+	text-align: center;
+}
+
+.pa-padding {
+	padding: 0 15px;
+}
+
+.pa-underline {
+	text-decoration: underline;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.pa-link {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.pa-link:hover {
+	color: rgba(184, 184, 184, 0.911);
+}
+.service {
+	background-color: orange;
+}
+
+.service-container {
+	width: 1200px;
+	padding: 3px 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas:
+		"i head head"
+		"i service-card1 service-card2"
+		"i service-card1 service-card2"
+		"i service-card1 service-card2";
+}
+
+.service-container img {
+	width: 100%;
+	height: 340px;
+}
+
+.i {
+	grid-area: i;
+}
+
+.head {
+	grid-area: head;
+	height: 58px;
+	padding-top: 14px;
+	padding-left: 70px;
+}
+
+.service-card1 {
+	grid-area: service-card1;
+}
+
+.service-card2 {
+	grid-area: service-card2;
+}
+
+/* Formatting paragraph of card-1 */
+.service-card1 p {
+	line-height: 50px;
+	padding-left: 47px;
+}
+
+/* Formatting paragraph of card-2 */
+.service-card2 p {
+	line-height: 35px;
+	padding-left: 47px;
+}
+
+/* Formatting h3 of card-1 */
+.service-card1 h3 {
+	margin-bottom: 20px;
+}
+
+/* Formatting h3 of card-2 */
+.service-card2 h3 {
+	margin-bottom: 20px;
+}
+
+.offer-bg {
+	background-color: rgb(25, 59, 34);
+}
+
+.offer-container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 30% 30% auto;
+	grid-template-rows: 105px;
+}
+
+.l {
+	height: 88px;
+	grid-column: 1 / 3;
+	font-size: 20px;
+	color: yellow;
+	word-spacing: 2px;
+	letter-spacing: 4px;
+	padding-top: 17px;
+	padding-left: 180px;
+}
+
+.B {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* .button {
+	background-color: yellow;
+	display: inline-block;
+	padding: 30px;
+	border-radius: 50%;
+} */
+
+.button a {
+	color: rgb(25, 59, 34);
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px;
+	background-color: yellow;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 800;
+}
+.button a:hover {
+	background-color: rgb(139, 139, 48);
+}
+
+.beach-bg {
+	background-color: lightblue;
+}
+
+.beach-container {
+	width: 1170px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 0 15px;
+	background: url(img/beach.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.space {
+	position: absolute;
+	left: 80px;
+	top: 100px;
+	color: #f1f1f1f1;
+	word-spacing: 6px;
+	letter-spacing: 4px;
+	font-size: 18px;
+}
+
+.space i {
+	color: black;
+}
+
+/* Flicker Section */
+.flicker-bg {
+	background-color: #f1f1f1;
+}
+
+.flicker-container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: grid;
+	grid-template-areas:
+		"flicker primary primary primary primary primary primary primary"
+		"img1 img2 img3 . . contact-info contact-info contact-info"
+		"img4 img5 img6 . . email email email"
+		"see see see see see see see see";
+
+	grid-row-gap: 20px;
+	grid-column-gap: 15px;
+	padding-bottom: 20px;
+}
+
+.flicker {
+	grid-area: flicker;
+	padding-top: 30px;
+	font-size: 18px;
+	position: relative;
+	left: 53px;
+}
+.primary {
+	grid-area: primary;
+	position: relative;
+	padding-top: 30px;
+	font-size: 18px;
+}
+
+.primary p {
+	position: absolute;
+	left: 582px;
+}
+
+.img1 {
+	grid-area: img1;
+}
+
+.img2 {
+	grid-area: img2;
+}
+
+.img3 {
+	grid-area: img3;
+}
+
+.img4 {
+	grid-area: img4;
+}
+
+.img5 {
+	grid-area: img5;
+}
+
+.img6 {
+	grid-area: img6;
+}
+
+.contact-info {
+	grid-area: contact-info;
+
+	padding-top: 20px;
+}
+
+.contact-info p {
+	font-size: 14px;
+}
+
+.email {
+	grid-area: email;
+}
+
+.email p {
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+section div div img {
+	width: 150px;
+	height: 100px;
+}
+
+.see {
+	grid-area: see;
+}
+
+.see span {
+	position: relative;
+	left: 265px;
+}
+
+.see span a {
+	color: cyan;
+}
+
+.see span a:hover {
+	color: rgb(59, 128, 128);
+}
+
+.footer {
+	background-color: rgb(25, 59, 34);
+}
+
+.footer-container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-areas: "logo1 para para para para para";
+}
+
+.footer-logo {
+	grid-area: logo1;
+	min-height: 85px;
+	background: url(img/lotus-logo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.footer-pa {
+	grid-area: para;
+	height: 58px;
+	padding-top: 27px;
+	font-size: 20px;
+	text-align: center;
+	color: yellow;
+	word-spacing: 2px;
+}
